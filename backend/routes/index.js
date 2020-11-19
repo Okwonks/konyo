@@ -9,7 +9,7 @@ const routes = {
 
 Object.keys(routes)
   .forEach(k => {
-    console.log('loading route ', k);
+    console.log('loading route', k);
     const controller = require(`../controllers/${routes[k]}`);
     router[controller.method](k, controller.fn);
   });
