@@ -1,1 +1,12 @@
 * Add custom logger, winston?
+
+FRONTEND
+* Add navbar and sidebar
+* Add admin pages
+* Add home page and dashboard page
+* Add forms
+* Link backend requests
+
+BACKEND
+* Add db connection
+
