@@ -8,5 +8,6 @@ FRONTEND
 * Link backend requests
 
 BACKEND
-* Add db connection
+* Add db connection options (postgresql)
+* Add connection option for mongoDb
 
