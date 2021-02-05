@@ -4,9 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const loadRoutes = require('./config/route-loader');
-
-const usersRouter = require('./routes/users');
+const loadRoutes = require('./utils/route-loader'); // TODO this should probably be in a util instead
 
 const app = express();
 
@@ -20,9 +18,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../frontend/build')));
 
-// TODO add a "machine" here which will load all the routes
 loadRoutes(app);
-app.use('/api/users', usersRouter);
 
 // load react app
 /* eslint-disable-next-line no-unused-vars */
