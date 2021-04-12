@@ -4,7 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const loadRoutes = require('./utils/route-loader'); // TODO this should probably be in a util instead
+const loadRoutes = require('./utils/route-loader');
 
 const app = express();
 
@@ -21,7 +21,6 @@ app.use(express.static(path.join(__dirname, '../frontend/build')));
 loadRoutes(app);
 
 // load react app
-/* eslint-disable-next-line no-unused-vars */
 app.get('/*', (req, res, next) => res.sendFile(path.join(__dirname, '../frontend/build', 'index.html')));
 
 // catch 404 and forward to error handler
@@ -30,7 +29,7 @@ app.use(function(req, res, next) {
 });
 
 // error handler
-app.use(function(err, req, res, next) { // eslint-disable-line no-unused-vars
+app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

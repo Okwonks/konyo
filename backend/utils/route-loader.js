@@ -9,7 +9,6 @@ module.exports = (app) => {
       const controller = require(`../controllers/${routes[k]}`);
       router[controller.method](k, controller.fn);
     });
-  // TODO this might be a flawed approach
   app.use(router);
   console.log('routes loaded...');
 };

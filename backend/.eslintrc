@@ -48,7 +48,7 @@
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     "no-unexpected-multiline":      ["warn"],
     "no-unreachable":               ["warn"],
-    "no-unused-vars":               ["warn", {"caughtErrors":"all", "caughtErrorsIgnorePattern": "^(_|unused($|[A-Z].*))$", "argsIgnorePattern": "^(_|unused($|[A-Z].*))$", "varsIgnorePattern": "^(_|unused($|[A-Z].*))$" }],
+    "no-unused-vars":               ["warn", {"args": "none"}],
     "no-use-before-define":         ["error", {"functions":false}],
     "prefer-arrow-callback":        ["off"],
     "quotes":                       ["warn", "single", {"avoidEscape":false, "allowTemplateLiterals":true}],

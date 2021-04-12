@@ -1,4 +1,5 @@
 * Add custom logger, winston?
+* Move dependencies to root package.json
 
 FRONTEND
 * Add navbar and sidebar
@@ -10,4 +11,5 @@ FRONTEND
 BACKEND
 * Add db connection options (postgresql)
 * Add connection option for mongoDb
-
+* Move src/database-connection/ -> src/database-config/
+* Add custom logger, move from console.log
