@@ -1,13 +1,10 @@
-* Add custom logger, winston?
+# API
 
-FRONTEND
-* Add navbar and sidebar
-* Add admin pages
-* Add home page and dashboard page
-* Add forms
-* Link backend requests
+* support database connections
+* add authd endpoints
 
-BACKEND
-* Add db connection options (postgresql)
-* Add connection option for mongoDb
+# CSS
 
+* implement tailwindcss to make styling easier
+
+# FRONTEND
